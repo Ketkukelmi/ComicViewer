@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AwesomeComicViewer</string>
+    <string name="pickComic">Pick a comic which you want to read</string>
 </resources>
