@@ -2,8 +2,25 @@
 <resources>
     <string-array name="fingerpori">
         <item name="10102017">https://hs.mediadelivery.fi/img/1920/7d5a631fb3524d9294b12789822b5ceb.jpg.webp</item>
+        <item name="09102017">https://hs.mediadelivery.fi/img/1920/70bbc47b998c4e30807d504b7c185f34.jpg.webp</item>
+        <item name="07102017">https://hs.mediadelivery.fi/img/1920/a6aa47f8eab24b0a9d54b2d6ce57e29a.jpg.webp</item>
+        <item name="06102017">https://hs.mediadelivery.fi/img/1920/4d0a495772824b34b69b8ddffa3708d4.jpg.webp</item>
+        <item name="05102017">https://hs.mediadelivery.fi/img/1920/9e253a0a25534bb295d5f8a4ef4410bd.jpg.webp</item>
+        <item name="04102017">https://hs.mediadelivery.fi/img/1920/e1628bca2e604225a9fb49b9307fcec5.jpg.webp</item>
+        <item name="03102017">https://hs.mediadelivery.fi/img/1920/23c29b6be1c2496a953911b4531bd1ff.jpg.webp</item>
+        <item name="02102017">https://hs.mediadelivery.fi/img/1920/df290ee01f234c25b2e3cc6c67c348a6.jpg.webp</item>
+        <item name="30092017">https://hs.mediadelivery.fi/img/1920/ddb23c1de7d04ac0ae616fc00e84f50d.jpg.webp</item>
     </string-array>
     <string-array name="xkcd">
-        <item name="1900">https://imgs.xkcd.com/comics/jet_lag.png</item>
+        <item name="1900">https://imgs.xkcd.gcom/comics/jet_lag.png</item>
+        <item name="1899">https://imgs.xkcd.com/comics/ears.png</item>
+        <item name="1898">https://imgs.xkcd.com/comics/october_2017.png</item>
+        <item name="1897">https://imgs.xkcd.com/comics/self_driving.png</item>
+        <item name="1896">https://imgs.xkcd.com/comics/active_ingredients_only.png</item>
+        <item name="1895">https://imgs.xkcd.com/comics/worrying_scientist_interviews.png</item>
+        <item name="1894">https://imgs.xkcd.com/comics/real_estate.png</item>
+        <item name="1893">https://imgs.xkcd.com/comics/thread.png</item>
+        <item name="1892">https://imgs.xkcd.com/comics/usb_cables.png</item>
+        <item name="1891">https://imgs.xkcd.com/comics/obsolete_technology.png</item>
     </string-array>
 </resources>
