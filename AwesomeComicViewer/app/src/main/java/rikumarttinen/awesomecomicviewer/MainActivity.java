@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String fingerpori = "dunno url tai jtn";
                 Intent intent = new Intent(getApplication(), ComicViewerActivity.class);
-                intent.putExtra("Fingerpori", fingerpori);
+                intent.putExtra("URL", fingerpori);
                 startActivity(intent);
             }
         });
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String xkcd = "dunno url tai jtn";
                 Intent intent = new Intent(getApplication(), ComicViewerActivity.class);
-                intent.putExtra("Xkcd", xkcd);
+                intent.putExtra("URL", xkcd);
                 startActivity(intent);
             }
         });
