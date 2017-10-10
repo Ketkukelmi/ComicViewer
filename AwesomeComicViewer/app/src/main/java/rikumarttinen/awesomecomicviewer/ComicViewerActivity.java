@@ -14,24 +14,27 @@ import com.squareup.picasso.Picasso;
 
 public class ComicViewerActivity extends AppCompatActivity {
     ImageView comicView;
+    String comic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comic);
+        Bundle extras  = getIntent().getExtras();
+        if (extras != null) {
+            comic = extras.getString("URL");
+        }
+        String firstURLToLoad;
+        switch (comic) {
+            default:
+            case "fingerpori":
+                firstURLToLoad = getResources().getStringArray(R.array.fingerpori)[0];
+                break;
+            case "xkcd":
+                firstURLToLoad = getResources().getStringArray(R.array.xkcd)[0];
+                break;
+        }
         comicView = (ImageView) findViewById(R.id.comicView);
-
-        Log.d("asdf", "asdf");
         Picasso.with(this)
-                .load("https://hs.mediadelivery.fi/img/1920/23c29b6be1c2496a953911b4531bd1ff.jpg").into(comicView, new Callback() {
-            @Override
-            public void onSuccess() {
-                Log.d("picasso", "onsuccess");
-            }
-
-            @Override
-            public void onError() {
-                Log.d("picasso", "onerror");
-            }
-        });
+                .load(firstURLToLoad).into(comicView);
     }
 }

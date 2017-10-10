@@ -31,18 +31,16 @@ public class MainActivity extends AppCompatActivity {
         fingerB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String fingerpori = "dunno url tai jtn";
                 Intent intent = new Intent(getApplication(), ComicViewerActivity.class);
-                intent.putExtra("URL", fingerpori);
+                intent.putExtra("URL", "fingerpori");
                 startActivity(intent);
             }
         });
         xkcdB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String xkcd = "dunno url tai jtn";
                 Intent intent = new Intent(getApplication(), ComicViewerActivity.class);
-                intent.putExtra("URL", xkcd);
+                intent.putExtra("URL", "xkcd");
                 startActivity(intent);
             }
         });

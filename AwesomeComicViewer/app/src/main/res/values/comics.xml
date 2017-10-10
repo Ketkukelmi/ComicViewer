@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fingerpori">
+        <item name="10102017">https://hs.mediadelivery.fi/img/1920/7d5a631fb3524d9294b12789822b5ceb.jpg.webp</item>
+    </string-array>
+    <string-array name="xkcd">
+        <item name="1900">https://imgs.xkcd.com/comics/jet_lag.png</item>
+    </string-array>
+</resources>
