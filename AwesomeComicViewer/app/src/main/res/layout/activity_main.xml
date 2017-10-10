@@ -4,17 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context="rikumarttinen.awesomecomicviewer.MainActivity">
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_marginTop="91dp"
+        app:srcCompat="@drawable/l_fingerporilogo"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="68dp"
-        app:srcCompat="@android:drawable/title_bar" />
+        android:layout_centerHorizontal="true" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -23,5 +26,22 @@
         android:layout_alignStart="@+id/imageButton"
         android:layout_below="@+id/imageButton"
         android:layout_marginTop="32dp"
-        app:srcCompat="@android:drawable/title_bar" />
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/xkcd"
+        android:layout_alignEnd="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/pickComic"
+        android:textColor="@color/blacker"
+        android:textSize="45sp"
+        android:visibility="visible" />
+
 </RelativeLayout>
