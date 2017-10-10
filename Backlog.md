@@ -1,5 +1,5 @@
 # ComicViewer
-Simple webcomic viewer
+Simple webcomic viewer for mobile data communications - course. With comic viewer you can read two web comics with ease of not loading the whole page. In the future the App is easely expanted to any comic.
 
 # Backlog
 
