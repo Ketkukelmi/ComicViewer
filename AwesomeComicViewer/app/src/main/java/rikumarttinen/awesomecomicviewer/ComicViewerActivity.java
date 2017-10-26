@@ -19,7 +19,7 @@ import com.squareup.picasso.Picasso;
  */
 
 public class ComicViewerActivity extends AppCompatActivity {
-    ImageView comicView;
+    TouchImageView comicView;
     String comic;
     String cName;
     int i = 0;
@@ -30,7 +30,7 @@ public class ComicViewerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comic);
-
+        float zoom = (float) 0.999;
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -47,7 +47,8 @@ public class ComicViewerActivity extends AppCompatActivity {
                 firstURLToLoad = getResources().getStringArray(R.array.xkcd)[i];
                 break;
         }
-        comicView = (ImageView) findViewById(R.id.comicView);
+        comicView = (TouchImageView) findViewById(R.id.comicView);
+        comicView.setZoom(zoom);
         Picasso.with(this)
                 .load(firstURLToLoad).into(comicView);
     }
@@ -74,7 +75,7 @@ public class ComicViewerActivity extends AppCompatActivity {
                 break;
             default:
         }
-        comicView = (ImageView) findViewById(R.id.comicView);
+        comicView = (TouchImageView) findViewById(R.id.comicView);
         Picasso.with(getApplication())
                 .load(nextUrl).into(comicView);
     }
@@ -101,7 +102,8 @@ public class ComicViewerActivity extends AppCompatActivity {
                 break;
             default:
         }
-        comicView = (ImageView) findViewById(R.id.comicView);
+        comicView = (TouchImageView) findViewById(R.id.comicView);
+
         Picasso.with(getApplication())
                 .load(nextUrl).into(comicView);
     }
