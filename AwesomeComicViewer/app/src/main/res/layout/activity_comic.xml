@@ -4,8 +4,29 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <rikumarttinen.awesomecomicviewer.TouchImageView
         android:id="@+id/comicView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onClicBack"
+        android:layout_marginBottom="52dp"
+        android:layout_marginStart="43dp"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="onClickNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginEnd="48dp"
+        android:text="@string/next" />
 </RelativeLayout>
