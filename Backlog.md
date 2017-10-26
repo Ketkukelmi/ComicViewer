@@ -11,3 +11,6 @@ UI is designed to be easy to use with swipe to change the comic
 
 ## XML to load and keep the comic urls
 We will use xml file to load and then store the urls that contains the comics
+
+## TouchImageView
+Images will be displayed in TouchImageView instead of imageView to enable zoom
